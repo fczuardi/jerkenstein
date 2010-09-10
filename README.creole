@@ -1,0 +1,25 @@
+= Jerkenstein
+Extensible IRC bot in Javascript (runs on Node.js)
+
+This is my attempt to create a extensible/plugabble version of the [[http://github.com/gf3/Jerk|Jerk]] IRC bot.
+
+It is pretty alpha. You have been warned.
+
+== Installation
+=== If you have Git installed (recommended)
+{{{
+git clone --recursive git://github.com/fczuardi/jerkenstein.git
+}}}
+
+== Credits, Licenses and External Libraries
+
+Jerkenstein is Free Software, developed by 
+Fabricio Zuardi and released under the MIT License.
+
+Jerkenstein relies on external libraries written by others and 
+the code for those libraries are also included in this distribution 
+(check the /lib folder).
+
+=== List of the External Libraries
+
+* [[http://github.com/gf3/Jerk|Jerk]] by [[http://gf3.ca|Gianni Chiappetta]] ([[http://unlicense.org/|Unlicense]])
