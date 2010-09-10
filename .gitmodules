@@ -1,0 +1,3 @@
+[submodule "lib/Jerk"]
+	path = lib/Jerk
+	url = git://github.com/gf3/Jerk.git
