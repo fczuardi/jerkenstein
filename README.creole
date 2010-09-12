@@ -2,6 +2,9 @@
 Extensible IRC bot in Javascript (runs on Node.js)
 
 This is my attempt to create a extensible/plugabble version of the [[http://github.com/gf3/Jerk|Jerk]] IRC bot.
+The example plugins are heavily inspired on the 
+[[http://sourceforge.net/projects/supybot/|Supybot]] 
+[[http://ubottu.com/stdin/supydocs/commands.html|commands]].
 
 It is pretty alpha. You have been warned.
 

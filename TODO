@@ -1,0 +1,16 @@
+- list commands
+- load every plugin on a folder
+- stack
+
+- Supybot API
+  - Format
+    - upper
+    - lower
+  - Misc
+    - version
+  - Quote
+    - quote add
+    - quote remove
+    - quote random
+  - Utilities
+    - re
