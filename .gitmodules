@@ -1,3 +1,3 @@
-[submodule "lib/Jerk"]
-	path = lib/Jerk
+[submodule "vendor/Jerk"]
+	path = vendor/Jerk
 	url = git://github.com/gf3/Jerk.git
