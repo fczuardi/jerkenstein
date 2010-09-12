@@ -1,8 +1,8 @@
 //config
 var options = { 
        server: 'irc.freenode.net'
-      ,nick: 'bullwinkle'
-      ,channels: ['#bullwinkle-dev', "#external-ning-2.0"]
+      ,nick: 'bullwinkle_nsfw'
+      ,channels: ["#external-ning-2.0"]
     }
 
 //libraries
@@ -14,13 +14,17 @@ var  jerkenstein = require('../lib/jerkenstein')
 var plugins_dir = path.join(__dirname, 'plugins');
 
 //init
+jerkenstein.debug = true;
 fs.readdir(plugins_dir, function(err, files){
   if (err) throw err;
   //load all plugins
+  var plugins = []
   files.forEach(function(filename){
     filename = path.join(plugins_dir, filename)
-    jerkenstein.plug(require(filename.slice(0,-3)).plugin)
+    console.log('requiring %s…', filename)
+    plugins.push(require(filename.slice(0,-3)).plugin)
   });
+  jerkenstein.plug(plugins)
   //connect
-  jerkenstein(function(){}).connect(options)
+  jerkenstein.connect(options);
 });
