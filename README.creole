@@ -21,7 +21,7 @@ Fabricio Zuardi and released under the MIT License.
 
 Jerkenstein relies on external libraries written by others and 
 the code for those libraries are also included in this distribution 
-(check the /lib folder).
+(check the /vendor folder).
 
 === List of the External Libraries
 
