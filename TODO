@@ -1,10 +1,10 @@
-- pipe (chained commands)
 - list commands
+ok - pipe (chained commands)
 ok - load every plugin on a folder
 
 - Supybot API
   - Format
-    - upper
+    ok - upper
     - lower
   - Misc
     - version

@@ -19,6 +19,7 @@ this.plugin = {
         ,processCommandString = function(command_string,output_function){
           message.plugs.forEach(function(plug){
             if (md = command_string.match(plug.pattern)){
+              message.mutePlugin(plug.name);
               plug.action.call(this,{
                 match_data:md
                 ,say:output_function
