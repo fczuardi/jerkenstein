@@ -5,11 +5,17 @@ this.plugin = {
   ,'example': "?rainbow What does it mean?"
   ,'action': function(message) {
     var output = ''
-    for(i in message.match_data[1]){
+    var lettercount = 0
+    for(i=0; i < message.match_data[1].length; i++){
       var rainbow_colors = [4, 7, 8, 3, 12, 6]
-      color_code = rainbow_colors[i % rainbow_colors.length]
-      color_code = '\x03'+((color_code.length<2) ? ('0'+color_code) : color_code)
-      output += color_code+message.match_data[1][i]
+      if (message.match_data[1][i] != '\x03'){
+        color_code = rainbow_colors[lettercount % rainbow_colors.length].toString()
+        color_code = '\x03'+((color_code.length<2) ? ('0'+color_code) : color_code)
+        output += color_code+message.match_data[1][i]
+        lettercount++;
+      }else{
+        i = i+2;
+      }
     }
     message.say(output)
   }

@@ -11,7 +11,8 @@ this.plugin = {
   ,'example': '?calc 2+2.'
   ,'action': function(message) {
     try{
-      message.say(message.user + ': ' + message.match_data[1]+ ' = ' + eval(message.match_data[1]).toString())
+      var prefix = (message.user)?(message.user + ': '):('')
+      message.say(prefix + message.match_data[1]+ ' = ' + eval(message.match_data[1]).toString())
     }catch(e){
       message.say('err')
     }
