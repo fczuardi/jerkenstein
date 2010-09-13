@@ -7,7 +7,7 @@ this.plugin = {
     var  first_command_string = message.match_data[1]
         ,other_command_names = message.match_data[2].split('|')
         ,pipeOutput = function(text){
-          var  next_command_name = other_command_names.shift()
+          var  next_command_name = other_command_names.shift().trim()
               ,stop_condition = (other_command_names.length == 0)
               ,command_string = '?'+next_command_name+' '+text
           if (stop_condition) {
