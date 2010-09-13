@@ -1,11 +1,24 @@
 - list commands
+- version
+- source
+- compare source vs url
+- sha1
+- redis_db
+- logger
 ok - pipe (chained commands)
 ok - load every plugin on a folder
+- ding!
 
-- Supybot API
+- Supybot API (http://ubottu.com/stdin/supydocs/commands.html)
+  - Filter
+    - rot13
   - Format
     ok - upper
     - lower
+    - underline
+    - 
+  - Seen
+    - seen
   - Misc
     - version
   - Quote
@@ -14,3 +27,9 @@ ok - load every plugin on a folder
     - quote random
   - Utilities
     - re
+  - Status
+    - uptime
+  - Fun
+    - eightball
+    - monologue
+    

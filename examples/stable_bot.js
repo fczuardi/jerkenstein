@@ -12,7 +12,7 @@ var  jerkenstein = require('../lib/jerkenstein')
 
 //global vars
 var plugins_dir = path.join(__dirname, 'plugins');
-var disabled_plugins = ['pipe', 'stack'];
+var disabled_plugins = ['stack'];
 
 //init
 fs.readdir(plugins_dir, function(err, files){
