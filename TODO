@@ -1,3 +1,4 @@
+- google
 - list commands
 - version
 - source
@@ -32,4 +33,5 @@ ok - load every plugin on a folder
   - Fun
     - eightball
     - monologue
-    
+  - Google
+    - lucky
