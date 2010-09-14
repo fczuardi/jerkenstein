@@ -18,6 +18,7 @@ var disabled_plugins = ['stack'];
 fs.readdir(plugins_dir, function(err, files){
   if (err) throw err;
   //load all plugins
+  var plugins = []
   files.forEach(function(filename){
     filename = filename.slice(0,-3)
     for(i in disabled_plugins){
@@ -25,8 +26,9 @@ fs.readdir(plugins_dir, function(err, files){
     }
     console.log('loading %s…', filename)
     filename = path.join(plugins_dir, filename)
-    jerkenstein.plug(require(filename).plugin)
+    plugins.push(require(filename).plugin)
   });
+  jerkenstein.plug(plugins);
   //connect
   jerkenstein.connect(options);
 });
