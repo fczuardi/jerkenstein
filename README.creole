@@ -1,12 +1,20 @@
 = Jerkenstein
 Extensible IRC bot in Javascript (runs on Node.js)
 
-This is my attempt to create a extensible/plugabble version of the [[http://github.com/gf3/Jerk|Jerk]] IRC bot.
+This is my attempt to create a extensible/plugabble version of the 
+[[http://github.com/gf3/Jerk|Jerk]] IRC bot.
+
+My goal is for the API to be simple enough and to feel familiar for people 
+already writing bots using Jerk. Check the 
+[[http://github.com/fczuardi/jerkenstein/tree/master/examples/plugins/|/examples/plugins]]
+folder to see how a Jerkenstein plugin look like. I recommend starting with
+echo.js and echoafter.js
+
 The example plugins are heavily inspired on the 
 [[http://sourceforge.net/projects/supybot/|Supybot]] 
 [[http://ubottu.com/stdin/supydocs/commands.html|commands]].
 
-It is pretty alpha. You have been warned.
+Everything here is pretty alpha/unstable and moving fast. You have been warned.
 
 == Installation
 === If you have Git installed (recommended)
