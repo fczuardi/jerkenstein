@@ -1,0 +1,15 @@
+= Pipe Plugin tests
+
+== Simple
+?echo foo | rainbow
+?echo foo | rainbow | upper
+
+== With env passing
+?uptime | rainbow
+
+== With multiline input
+?engine | rainbow
+
+== Asynchronous
+?echoafter 2 foo | upper
+?google foo | upper

@@ -1,4 +1,3 @@
-- uptime
 - monologue
 - list commands
 - man command
@@ -9,7 +8,10 @@
 - logger
 - ding!
 - github
+- grep
 
+
+ok - uptime
 ok - ebgine/version
 ok - google
 ok - pipe (chained commands)
