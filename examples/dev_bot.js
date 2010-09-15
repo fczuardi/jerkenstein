@@ -19,6 +19,7 @@ fs.readdir(plugins_dir, function(err, files){
   if (err) throw err;
   //load all plugins
   var plugins = []
+  files.sort();
   files.forEach(function(filename){
     filename = path.join(plugins_dir, filename)
     console.log('requiring %s…', filename)

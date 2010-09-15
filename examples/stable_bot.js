@@ -19,6 +19,7 @@ fs.readdir(plugins_dir, function(err, files){
   if (err) throw err;
   //load all plugins
   var plugins = []
+  files.sort()
   files.forEach(function(filename){
     filename = filename.slice(0,-3)
     for(i in disabled_plugins){
