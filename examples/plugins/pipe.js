@@ -1,12 +1,12 @@
 this.plugin = {
    'name': 'pipe'
-  ,'pattern': /^(\?[^\s]+ [^\|]+)\|(.+)$/
+  ,'pattern': /^(\?[^\s]+[^\|]+)\|(.+)$/
   ,'description': 'Feed the output of a command as the input of the next command'
   ,'example': '?upper Oh my god its full on!|double|rainbow'
   ,'action': function(message, env) {
     var  first_command_string = message.match_data[1]
         ,other_command_names = message.match_data[2].split('|')
-        ,pipeOutput = function(text){
+        ,pipeOutput = function(text, env){
           var  next_command_name = other_command_names.shift().trim()
               ,stop_condition = (other_command_names.length == 0)
               ,command_string = '?'+next_command_name+' '+text

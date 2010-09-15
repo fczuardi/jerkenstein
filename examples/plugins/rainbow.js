@@ -1,6 +1,6 @@
 this.plugin = {
    'name': 'rainbow'
-  ,'pattern': /^\?rainbow (.+)$/ 
+  ,'pattern': /^\?rainbow ((.|\n)+)/m 
   ,'description': 'Colorize the message like a rainbow.'
   ,'example': "?rainbow What does it mean?"
   ,'action': function(message) {

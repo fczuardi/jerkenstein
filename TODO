@@ -1,14 +1,19 @@
-- google
+- uptime
+- monologue
 - list commands
-- version
+- man command
 - source
 - compare source vs url
 - sha1
 - redis_db
 - logger
+- ding!
+- github
+
+ok - ebgine/version
+ok - google
 ok - pipe (chained commands)
 ok - load every plugin on a folder
-- ding!
 
 - Supybot API (http://ubottu.com/stdin/supydocs/commands.html)
   - Filter

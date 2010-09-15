@@ -1,6 +1,6 @@
 this.plugin = {
    'name': 'colorize'
-  ,'pattern': /^\?colorize (.+)$/ 
+  ,'pattern': /^\?colorize ((.|\n)+)/m 
   ,'description': 'Randomly colorize the message.'
   ,'example': "?colorize I feel funny. Is this real life?"
   ,'action': function(message) {

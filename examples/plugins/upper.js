@@ -1,6 +1,6 @@
 this.plugin = {
    'name': 'upper'
-  ,'pattern': /^\?upper (.+)$/ 
+  ,'pattern': /^\?upper ((.|\n)+)/m 
   ,'description': 'Uppercase a message.'
   ,'example': '?upper consequences will never be the same.'
   ,'action': function(message) {

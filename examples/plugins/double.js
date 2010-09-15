@@ -1,6 +1,6 @@
 this.plugin = {
    'name': 'double'
-  ,'pattern': /^\?double (.+)$/ 
+  ,'pattern': /^\?double ((.|\n)+)/m 
   ,'description': 'Print the same message twice.'
   ,'example': "?double Oh my God it's full on!"
   ,'action': function(message) {

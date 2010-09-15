@@ -1,6 +1,6 @@
 this.plugin = {
    'name': 'echo'
-  ,'pattern': /^\?echo (.+)$/ 
+  ,'pattern': /^\?echo ((.|\n)+)/m 
   ,'description': 'Repeat a message.'
   ,'example': '?echo Hello World.'
   ,'action': function(message) {

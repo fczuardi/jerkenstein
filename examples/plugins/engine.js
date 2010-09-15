@@ -1,6 +1,6 @@
 this.plugin = {
    'name': 'engine'
-  ,'pattern': /^\?engine\s*$/ 
+  ,'pattern': /^\?engine(\s|$)/
   ,'description': 'Information about the engine of the current bot.'
   ,'example': '?engine'
   ,'action': function(message, env) {

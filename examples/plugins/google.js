@@ -22,7 +22,7 @@ this.plugin = {
           ,results = this.stdout.data.toString()
                                               .replace(google_urls_pattern,'')
                                               .match(urls_pattern)
-      console.log(results)
+      console.log('search complete')
       message.say(message.user + ': Search results for '+message.match_data[1]+
                                   '\n'+results.splice(0,5).join('\n'))
     });
