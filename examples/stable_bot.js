@@ -12,7 +12,6 @@ var  jerkenstein = require('../lib/jerkenstein')
 
 //global vars
 var plugins_dir = path.join(__dirname, 'plugins');
-var disabled_plugins = ['stack'];
 
 //init
 fs.readdir(plugins_dir, function(err, files){
@@ -21,13 +20,9 @@ fs.readdir(plugins_dir, function(err, files){
   var plugins = []
   files.sort()
   files.forEach(function(filename){
-    filename = filename.slice(0,-3)
-    for(i in disabled_plugins){
-      if (filename == disabled_plugins[i]){ return; }
-    }
-    console.log('loading %s…', filename)
     filename = path.join(plugins_dir, filename)
-    plugins.push(require(filename).plugin)
+    console.log('requiring %s…', filename)
+    plugins.push(require(filename.slice(0,-3)).plugin)
   });
   jerkenstein.plug(plugins);
   //connect

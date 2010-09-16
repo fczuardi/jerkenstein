@@ -24,7 +24,7 @@ this.plugin = {
                                               .match(urls_pattern)
       console.log('search complete')
       message.say(message.user + ': Search results for '+message.match_data[1]+
-                                  '\n'+results.splice(0,5).join('\n'))
+                                  '\n'+results.splice(0,5).reverse().join('\n'))
     });
     google_results.stderr.on('data', function (data) {
       console.log('stderr: ' + data);
