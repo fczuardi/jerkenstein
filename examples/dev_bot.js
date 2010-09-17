@@ -14,7 +14,6 @@ var  jerkenstein = require('../lib/jerkenstein')
 var plugins_dir = path.join(__dirname, 'plugins');
 
 //init
-// jerkenstein.debug = true;
 fs.readdir(plugins_dir, function(err, files){
   if (err) throw err;
   //load all plugins

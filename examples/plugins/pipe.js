@@ -17,7 +17,7 @@ this.plugin = {
           processCommandString.call(this,command_string, message, pipeOutput)
         }
         ,processCommandString = function(command_string, message, output_function){
-          env.plugs.forEach(function(plug){
+          env.plugins.forEach(function(plug){
             if (md = command_string.match(plug.pattern)){
               message.mutePlugin(plug.name);
               message.runPlugin(plug.name, {
