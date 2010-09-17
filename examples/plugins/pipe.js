@@ -8,16 +8,14 @@ this.plugin = {
           , other_commands = message.match_data[2].split('|')
           , processCommand = function (command_string, message, output_fn) {
               env.plugins.forEach(function (plug) {
-                var matches = command_string.match(plug.pattern);
+                var   matches = command_string.match(plug.pattern)
+                    , input_message;
                 if (matches) {
+                  input_message = JSON.parse(JSON.stringify(message));
+                  input_message.match_data = matches;
+                  input_message.say = output_fn;
                   message.mutePlugin(plug.name);
-                  message.runPlugin(plug.name, {
-                      match_data: matches
-                    , say: output_fn
-                    , user: message.user
-                    , source: message.source
-                    , text: message.text
-                    });
+                  message.runPlugin(plug.name, input_message);
                 }
               });
             }
