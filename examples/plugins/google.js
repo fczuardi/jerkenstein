@@ -1,5 +1,4 @@
 //lynx installed on your machine is required
-/*global require, console*/
 var   spawn = require('child_process').spawn
     , google_search_url = "http://www.google.com/search?q=";
 
@@ -23,8 +22,8 @@ this.plugin = {
                                         .replace(google_urls_pattern, '')
                                         .match(urls_pattern);
         message.say(message.user + ': Search results for ' + 
-                                    message.match_data[1] + '\n' +
-                                    results.splice(0, 5).reverse().join('\n'));
+                    message.match_data[1] + '\n' +
+                    results.splice(0, 5).reverse().join('\n'));
       });
       google_results.stderr.on('data', function (data) {
         console.log('stderr: ' + data);

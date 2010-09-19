@@ -1,7 +1,7 @@
 this.plugin = {
     name: 'pipe'
   , pattern: new RegExp("^(\\?[^\\s]+[^\\|]+)\\|(.+)$")
-  , description: 'Feed the output of a command as the input of the next command'
+  , description: 'Feed the output of a plugin as the input of the next plugin'
   , example: '?upper Oh my god its full on!|double|rainbow'
   , action: function (message, env) {
       var   first_command = message.match_data[1]

@@ -1,4 +1,3 @@
-/*globals setTimeout*/
 this.plugin = {
     name: 'echoafter'
   , pattern: new RegExp("^\\?echoafter ([0-9]+) ((.|\\n)+)", 'm')

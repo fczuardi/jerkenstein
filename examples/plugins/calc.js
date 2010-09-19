@@ -1,4 +1,3 @@
-/*globals process*/
 var   basic = "[0-9\\+\\-\\*\\/\\%\\.\\,\\(\\)\\s]"
     , math_properties = "E|LN2|LN10|LOG2E|LOG10E|PI|SQRT1_2|SQRT2"
     , math_methods = "abs|acos|asin|atan|atan2|ceil|cos|exp|floor" +
@@ -17,8 +16,8 @@ this.plugin = {
       try {
         var prefix = (message.user) ? (message.user + ': ') : ('');
         message.say(prefix + 
-                    message.match_data[1] + ' = ' + 
-                    Script.runInThisContext((message.match_data[1]).toString())
+                  message.match_data[1] + ' = ' + 
+                  Script.runInThisContext((message.match_data[1]).toString())
                     );
       } catch (e) {
         message.say('err');
