@@ -11,7 +11,7 @@ this.plugin = {
     name: 'calc'
   , pattern: pattern
   , description: 'Calculate basic arithmetic.'
-  , example: '?calc 2+2'
+  , example: '?calc 2 * (3 + Math.pow(2, 2)) * Math.floor(Math.PI)'
   , action: function (message) {
       try {
         var prefix = (message.user) ? (message.user + ': ') : ('');

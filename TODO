@@ -1,6 +1,4 @@
 - monologue
-- list commands
-- man command
 - source
 - compare source vs url
 - sha1
@@ -11,6 +9,7 @@
 - grep
 
 
+ok - help (list commands, man command)
 ok - uptime
 ok - ebgine/version
 ok - google
@@ -28,7 +27,7 @@ ok - load every plugin on a folder
   - Seen
     - seen
   - Misc
-    - version
+    ok - version
   - Quote
     - quote add
     - quote remove
@@ -36,7 +35,7 @@ ok - load every plugin on a folder
   - Utilities
     - re
   - Status
-    - uptime
+    ok - uptime
   - Fun
     - eightball
     - monologue
