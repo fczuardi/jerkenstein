@@ -15,7 +15,7 @@ this.plugin = {
         }
       } else {
         message.say(
-          monologues[channel_name].user + ' have been talking alone for ' +
+          monologues[channel_name].user + ' has been talking alone for ' +
           monologues[channel_name].count + ' lines.'
           );
       }
