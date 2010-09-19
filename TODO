@@ -1,14 +1,14 @@
-- monologue
+- redis_db
+- logger
 - source
 - compare source vs url
 - sha1
-- redis_db
-- logger
 - ding!
 - github
 - grep
 
 
+ok - monologue
 ok - help (list commands, man command)
 ok - uptime
 ok - ebgine/version
